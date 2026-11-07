@@ -95,11 +95,6 @@ export default function Home() {
 
       {/* TOP HEADER */}
       <header className="relative z-10 w-full flex flex-col items-center">
-        {/* Emblem Monogram */}
-        <div className="w-9 h-9 rounded-full border border-[#d4af37]/40 flex items-center justify-center bg-black/60 backdrop-blur-sm shadow-[0_0_20px_rgba(212,175,55,0.15)] mb-3">
-          <span className="font-serif text-[#d4af37] text-base font-semibold tracking-wider">K</span>
-        </div>
-
         {/* Badge: A NEW CHAPTER BEGINS */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/35 bg-[#121118]/80 backdrop-blur-md text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#d4af37] shadow-[0_0_20px_rgba(212,175,55,0.12)]">
           <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" />
