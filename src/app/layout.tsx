@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "KHAYVAN · The Art of Fragrance | Thalassery",
+  title: "KHAYTHUB · The Art of Fragrance | Thalassery",
   description:
-    "A new fragrance experience is on its way. Crafted to inspire, designed to be remembered. By Thweeb, Thalassery · Kerala.",
+    "A new fragrance experience is on its way. Crafted to inspire, designed to be remembered. By Thweeb, Thalassery · Kerala. khaythub.com",
   keywords: [
-    "Khayvan",
+    "Khaythub",
+    "khaythub.com",
     "Fragrance",
     "Perfume",
     "Thweeb",
@@ -15,10 +16,13 @@ export const metadata: Metadata = {
     "Luxury Perfume",
     "Art of Fragrance",
   ],
+  metadataBase: new URL("https://khaythub.com"),
   openGraph: {
-    title: "KHAYVAN · A New Chapter Begins",
+    title: "KHAYTHUB · A New Chapter Begins",
     description:
-      "Something extraordinary is coming. The art of fragrance by Thweeb, Thalassery · Kerala.",
+      "Something extraordinary is coming. The art of fragrance by Thweeb, Thalassery · Kerala. khaythub.com",
+    url: "https://khaythub.com",
+    siteName: "KHAYTHUB",
     type: "website",
   },
 };
