@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #070709;
+    --foreground: #f4f4f5;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: #d4af37;
+    color: #070709;
+  }
+}
+
+.font-serif {
+  font-family: "Didot", "Bodoni MT", "Cinzel", "Cormorant Garamond", "Garamond", "Baskerville", "Georgia", serif;
+}
+
+.font-sans {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Custom luxury animation keyframes */
+@keyframes subtle-pulse {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(
+    135deg,
+    #fffbf0 0%,
+    #f7e7be 25%,
+    #d4af37 50%,
+    #aa771c 75%,
+    #ffd700 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mist-orb-1 {
+  animation: subtle-pulse 10s ease-in-out infinite;
+}
+
+.mist-orb-2 {
+  animation: subtle-pulse 14s ease-in-out infinite reverse;
+}
+
+.floating-bottle {
+  animation: float-slow 7s ease-in-out infinite;
+}
