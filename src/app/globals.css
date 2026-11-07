@@ -72,3 +72,18 @@
 .floating-bottle {
   animation: float-slow 7s ease-in-out infinite;
 }
+
+@keyframes gold-beacon {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.35), 0 0 70px rgba(212, 175, 55, 0.2), inset 0 0 18px rgba(212, 175, 55, 0.25);
+    border-color: rgba(212, 175, 55, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 55px rgba(255, 215, 0, 0.65), 0 0 100px rgba(212, 175, 55, 0.4), inset 0 0 28px rgba(255, 215, 0, 0.45);
+    border-color: rgba(255, 223, 115, 1);
+  }
+}
+
+.animate-gold-beacon {
+  animation: gold-beacon 3s ease-in-out infinite;
+}

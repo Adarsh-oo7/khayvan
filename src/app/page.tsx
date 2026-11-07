@@ -133,11 +133,19 @@ export default function Home() {
           A new fragrance experience is on its way. Crafted to inspire, designed to be remembered.
         </p>
 
-        {/* COMING SOON Badge */}
-        <div className="inline-block px-7 py-2.5 rounded-full border border-[#d4af37]/50 bg-gradient-to-b from-[#1c1810]/90 to-black/90 backdrop-blur-md shadow-[0_0_30px_rgba(212,175,55,0.2)]">
-          <span className="text-xs sm:text-sm font-semibold tracking-[0.45em] uppercase text-[#d4af37]">
-            COMING SOON
-          </span>
+        {/* COMING SOON - HIGHLIGHTED BEACON */}
+        <div className="relative my-2">
+          {/* Ambient Outer Halo */}
+          <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(255,215,0,0.35)_0%,rgba(212,175,55,0.15)_50%,transparent_75%)] blur-2xl -z-10 scale-125" />
+
+          {/* Glowing Badge */}
+          <div className="animate-gold-beacon inline-flex items-center gap-3 sm:gap-4 px-8 sm:px-12 py-3.5 sm:py-4 rounded-full border border-[#d4af37] bg-gradient-to-r from-[#17130c]/95 via-[#231d10]/95 to-[#17130c]/95 backdrop-blur-xl transition-all">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ffd700] shadow-[0_0_10px_#ffd700] animate-pulse" />
+            <span className="text-sm sm:text-base md:text-lg font-serif font-bold tracking-[0.55em] uppercase gold-gradient-text drop-shadow-[0_2px_12px_rgba(255,215,0,0.5)]">
+              COMING SOON
+            </span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ffd700] shadow-[0_0_10px_#ffd700] animate-pulse" />
+          </div>
         </div>
       </section>
 
